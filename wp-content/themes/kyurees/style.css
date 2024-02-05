@@ -83,7 +83,11 @@
               }
 
               .top-navbar{
-                height:105px;
+                height:128px;
+              }
+              .btn-outline-pink{
+                width:200px;
+                margin-bottom:5px;
               }
               .wpcf7-submit{
                 background: #9747FF;
