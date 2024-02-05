@@ -102,3 +102,6 @@
               a.nav-link:hover{
                 border: none;
               }
+              .current-menu-item a{
+                color:#fff;
+              }

@@ -4,16 +4,16 @@
       <div class="row">
         <div class="col-md-2">
           <ul>
-            <li><a href="">About Us</a> </li>
+            <li><a href="<?php echo get_permalink('31'); ?>">About Us</a> </li>
             <li><a href="<?php echo get_permalink('87'); ?>">Contact Us</a> </li>
-            <li><a href="">Blogs</a> </li>
+            <li><a href="<?php echo get_permalink('390'); ?>">Blogs</a> </li>
           </ul>
         </div>
         <div class="col-md-2">
           <ul>
-            <li><a href="">Help and Support</a> </li>
-            <li><a href="">Terms</a> </li>
-            <li><a href="">Privacy Policy</a> </li>
+            <li><a href="<?php echo get_permalink('369'); ?>">Help and Support</a> </li>
+            <li><a href="<?php echo get_permalink('376'); ?>">Terms</a> </li>
+            <li><a href="<?php echo get_permalink('3'); ?>">Privacy Policy</a> </li>
           </ul>
         </div>
         <div class="col-md-8">

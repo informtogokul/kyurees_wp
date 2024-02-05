@@ -1,29 +1,20 @@
 <?php
-            /**
-             * The template for displaying all single posts
-             *
-             */
+    
 
-            get_header();
-            ?>
+                get_header();
+                ?>
+                 <main>
+                    <div class="container mt-100">
+                        <div class="row mt-100" style="padding-top:30px">
+                            <div class="col">
+                            <h1><?php the_title(); ?></h1>
+                        <?php the_content(); ?>
+</div>
+</div>
 
-            <main id="main" class="site-main" role="main">
+</div>
 
-              <?php
-              while ( have_posts() ) : the_post();
+                <?php
 
-       
-
-                // If single are open or we have at least one comment, load up the comment template.
-                if ( comments_open() || get_comments_number() ) :
-                  comments_template();
-                endif;
-
-              endwhile;
-              ?>
-
-            </main>
-
-            <?php
-
-            get_footer();
+                get_footer();
+                ?>

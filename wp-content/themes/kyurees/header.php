@@ -32,35 +32,18 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">For Individual</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">For Universities</a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  For Enterprise  </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"> Cybersecurity Apprenticeship Program </a></li>
-                
-                <li><a class="dropdown-item" href="#"> Cyber Academy </a></li>
-                <li><a class="dropdown-item" href="#"> Application  Security Training </a>
-                  <li><a class="dropdown-item" href="#"> Awareness Training & Phishing </a>
-                    <li><a class="dropdown-item" href="#"> Advanced Training </a>
-                      <li><a class="dropdown-item" href="#"> partnerships </a>
-                </li></ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News & Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Why Kyureeus</a>
-            </li>
-          </ul>
-         </div>
+    
+        <?php
+        wp_nav_menu( array(
+                'menu'              => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'navbar-collapse collapse',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        ?>
       </div>
       <div class="col-md-2">
         <a class="btn btn-outline-pink float-end" href="<?php echo get_permalink('87'); ?>" type="submit">Contact Us</a>
