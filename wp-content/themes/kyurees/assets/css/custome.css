@@ -21,25 +21,45 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-family: 'avenir_next_lt_probold';
+  src: url('../font/avenir_next_lt_pro_bold-webfont.woff2') format('woff2'),
+       url('../font/avenir_next_lt_pro_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'avenir55_roman';
+  src: url('../font/avenir-roman-webfont.woff2') format('woff2'),
+       url('../font/avenir-roman-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 a {
   text-decoration: none;
 }
 
 html,body {
-  font-family: 'bahnschriftregular';
+  font-family: 'avenir55_roman';
   font-weight: normal;
 }
 
 
   h1 {
-    font-family: 'Gobold Bold Regular';
+    font-family: 'avenir_next_lt_probold';
     font-weight: normal;
     font-size: 42px;
   }
 
   h2,h3,h4,h5,h6 {
-    font-family: 'Gobold Regular';
+    font-family: 'avenir_next_lt_probold';
     font-weight: normal;
 
   }
@@ -270,7 +290,7 @@ a.nav-link:hover {
   border: 2px solid #e152fd;
 }
 .top-navbar .navbar-nav .nav-item {
-  margin: 12px;
+  margin: 20px;
 }
 .top-navbar ul.dropdown-menu {
   background: #9747FF;
@@ -449,7 +469,7 @@ a.nav-link:hover {
   border: 1px solid #000000;
 }
 .training-tab .nav-pills .nav-link {
-  font-family: 'Gobold Regular';
+  font-family: 'avenir55_roman';
   color: #000000;
   border-radius: 0;
   border: 1px solid #000000;
@@ -632,6 +652,69 @@ ul.blog-social li {
   100% { 
     transform: translateX(-66.6666%);  
   }
+}
+
+@media only screen and (max-width:768px) {
+  .home-hero .col-md-4 {
+    margin-bottom: 20px;
+}
+.pie-chart-sec .border-right {
+  border-right: none;
+}
+.news-container-right.card {
+  margin-top: 20px;
+}
+.w-50 {
+  width: 90% !important;
+}
+.home-contact {
+  padding: 15px;
+}
+.footer-bottom {
+  margin-top: 10px;
+}
+.gradient-hero .col-md-6 {
+  margin-bottom: 20px;
+}
+.blog-slide .blogcard {
+  width: 160%;
+}
+.contact-hero h1 {
+  font-size: 30px;
+}
+.col-md-3, .col-md-4, .col-md-8 {
+  margin-bottom: 10px;
+}
+.btn-pink {
+  padding: 20px 20px;
+}
+iframe {
+  width: 100%;
+}
+.training-tab .nav-pills .nav-link {
+  width: 300px;
+}
+.navbar-collapse {
+  background: #212121;
+  border-bottom: 6px solid #9747ff;
+  margin-top: 18px;
+}
+button.navbar-toggler {
+  float: right;
+  margin-top: -42px;
+}
+.navbar>.container {
+  margin-top: 12px;
+}
+.navbar a.btn.btn-outline-pink {
+  margin-right: 70px;
+}
+
+
+} 
+
+@media only screen and (max-width:540px) {
+ 
 }
 
 
