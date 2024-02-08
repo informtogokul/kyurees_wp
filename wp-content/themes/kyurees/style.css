@@ -56,6 +56,16 @@
                 white-space: nowrap;
                 -webkit-overflow-scrolling: touch;
               }
+
+              .testi{
+                position: relative;
+              }
+
+              .testi img{
+                position: absolute;
+                top: 45%;
+                left: 45%;
+              }
         
               .btn-bd-primary {
                 --bd-violet-bg: #712cf9;
@@ -77,7 +87,9 @@
               .bd-mode-toggle {
                 z-index: 1500;
               }
-        
+              video {
+                object-fit: fill;
+            }
               .bd-mode-toggle .dropdown-menu .active .bi {
                 display: block !important;
               }

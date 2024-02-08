@@ -8,21 +8,31 @@
 <main>
 
 <section class="home-hero">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col-md-6">
-        <h1>
-          <?php echo get_field('banner_text_home'); ?>
+  
+    <div class="col-12">
+
+   <video id="myVideo" width="100%" autoplay>
+  <source src="<?php echo get_field('banner_video_url'); ?>" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+</div>
+</div>
+
+     <?php $arr =array("purple-card", "blue-card", "pink-card"); ?>
+  <div class="container">
+  <div class="row align-items-center" style="margin:30px 0px">
+  <div class="col-12 text-center">
+        <h1 style="text-align:center">
+        <?php echo get_field('banner_text_home'); ?>
         </h1>
-        <p class="lead"><?php echo get_field('banner_content_homepage'); ?></p>
+        <p class="lead" style="text-align:center"><?php echo get_field('banner_content_homepage'); ?></p>
         <a class="btn btn-yellow" href="<?php echo get_field('url_link_hp'); ?>"><?php echo get_field('link_text_hp'); ?></a>
       </div>
-      <div class="col-md-6">
-        <img src="<?php echo get_field('banner_image_hp'); ?>" class="img-fluid">
-      </div>
-    </div>
-     <?php $arr =array("purple-card", "blue-card", "pink-card"); ?>
-    <div class="row mt-4">
+    </div> 
+     <div class="row mt-4">
       <?php
         $i=0;
       ?>
@@ -42,8 +52,8 @@
                     endwhile;
                 endif; ?>
     </div>
-
   </div>
+
 </section>
 
 <section class="bg-light Cyber-section" >
@@ -204,7 +214,7 @@
         </div>
       </div>
       <?php $color =  array('bg-purple','bg-pink','bg-yellow'); 
-         $m=0;
+         $m=1;
         ?>
       <div class="row">
       <?php
@@ -219,18 +229,14 @@
         while ($query->have_posts()) {
             $query->the_post();
       ?>
+    
         <div class="col-md-4">
-          <div class="testi">
-            <div class="testi-name">
-              <h5><?php echo get_field('name_testimonials'); ?></h5>
-              <h6><?php echo get_field('designation_testimonials'); ?></h6>
-            </div>
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="testi-img">
-            <div class="testi-cont <?php echo $color[$m]; ?>">
-              <p>
-              <?php the_content(); ?>
-              </p>
-            </div>
+          <div class="testi" id="testv_<?php echo $m; ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Play.png" id="img_<?php echo $m; ?>" />
+                  <video id="test_<?php echo $m; ?>" width="100%">
+                    <source src="<?php  echo get_field('video_url_testi'); ?>" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
           </div>
         </div>
         <?php

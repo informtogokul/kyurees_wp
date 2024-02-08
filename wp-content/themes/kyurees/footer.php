@@ -33,7 +33,109 @@
     </div>
   </footer>
 </main>
+<?php wp_footer(); ?>
 <script src="<?php echo esc_url(get_template_directory_uri()."/assets/js/bootstrap.bundle.min.js"); ?>"></script>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  $("#myVideo").click(function() {
+    var video = $("#myVideo")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_2").show();
+      $("#img_1").show();
+      $("#img_3").show();
+      $("#test_1")[0].pause();
+      $("#test_3")[0].pause();
+      $("#test_2")[0].pause();
+    } else {
+      video.pause();
+    }
+  });
+  
+  $("#test_1").click(function() {
+    var video = $("#test_1")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_1").hide();
+      $("#img_2").show();
+      $("#img_3").show();
+      $("#test_2")[0].pause();
+      $("#test_3")[0].pause();
+      $("#myVideo")[0].pause();
+    } else {
+      video.pause();
+      $("#img_1").show();
+    }
+  });
 
+ $("#test_2").click(function() {
+    var video = $("#test_2")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_2").hide();
+      $("#img_1").show();
+      $("#img_3").show();
+      $("#test_1")[0].pause();
+      $("#test_3")[0].pause();
+      $("#myVideo")[0].pause();
+    } else {
+      video.pause();
+      $("#img_2").show();
+    }
+  });
+
+  $("#test_3").click(function() {
+    var video = $("#test_3")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_3").hide();
+      $("#img_1").show();
+      $("#img_2").show();
+      $("#test_1")[0].pause();
+      $("#test_2")[0].pause();
+      $("#myVideo")[0].pause();
+    } else {
+      video.pause();
+      $("#img_3").show();
+    }
+  });
+
+  /*$("#test_1").click(function() {
+    var video = $("#test_1")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_1").hide();
+      $("#img_2").show();
+      $("#img_3").show();
+      $("#test_2")[0].pause();
+      $("#test_3")[0].pause();
+      $("#myVideo")[0].pause();
+    } else {
+      video.pause();
+      $("#img_1").show();
+    }
+  });*/
+
+
+});
+
+  $(document).ready(function() {
+    var video = $("#myVideo")[0];
+$(window).scroll(function(){
+  var scroll = $(this).scrollTop();
+   IF(scroll > 70){
+    video.pause();
+   }ekse{
+    video.play();
+      $("#test_1")[0].pause();
+      $("#test_2")[0].pause();
+      $("#test_3")[0].pause();
+   }
+});
+  </script>
     </body>
 </html>
