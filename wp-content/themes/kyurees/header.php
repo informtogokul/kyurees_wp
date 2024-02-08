@@ -43,7 +43,7 @@
                 'container'         => 'div',
                 'container_class'   => 'navbar-collapse collapse',
                 'menu_class'        => 'navbar-nav mx-auto mb-2 mb-md-0',
-                'menu_id' => 'navbarCollapse',
+                'container_id' => 'navbarCollapse',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())
             );

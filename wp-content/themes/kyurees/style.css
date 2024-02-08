@@ -109,3 +109,14 @@
               .current-menu-item a{
                 color:#fff;
               }
+              @media only screen and (max-width: 768px){
+.navbar a.btn.btn-outline-pink {
+    margin-right: 123px;
+}
+section:first-child{
+  padding-top: 170px;
+}
+.top-navbar {
+  height: 181px;
+}
+}
