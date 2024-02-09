@@ -188,9 +188,16 @@ get_header(); ?>
     if (have_rows("voices_stories")):
                             while (have_rows("voices_stories")):
                                 the_row(); ?>
-        <div class="col-md-4">
+      <div class="col-md-4">
           <a href="javascript:;" class="btn btn-outline-dark"><?php echo get_sub_field('name_voice_fi'); ?></a>
-          <img src="<?php echo get_sub_field('image_voice_fi'); ?>" class="img-fluid">
+
+          <div class="testi" id="testv_<?php echo $m; ?>">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Play.png" id="img_<?php echo $m; ?>" />
+                  <video id="test_<?php echo $m; ?>" width="100%">
+                    <source src="<?php  echo get_sub_field('testimonial_video_url'); ?>" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+          </div>
         </div>
         <?php
                 endwhile;
