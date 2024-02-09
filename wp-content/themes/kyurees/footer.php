@@ -104,21 +104,6 @@
     }
   });
 
-  /*$("#test_1").click(function() {
-    var video = $("#test_1")[0];
-    if (video.paused) {
-      video.play();
-      $("#img_1").hide();
-      $("#img_2").show();
-      $("#img_3").show();
-      $("#test_2")[0].pause();
-      $("#test_3")[0].pause();
-      $("#myVideo")[0].pause();
-    } else {
-      video.pause();
-      $("#img_1").show();
-    }
-  });*/
 
 
 });
@@ -126,15 +111,18 @@
   $(document).ready(function() {
     var video = $("#myVideo")[0];
 $(window).scroll(function(){
+
+  
   var scroll = $(this).scrollTop();
-   IF(scroll > 70){
+   if(scroll > 70){
     video.pause();
-   }ekse{
+   }else{
     video.play();
       $("#test_1")[0].pause();
       $("#test_2")[0].pause();
       $("#test_3")[0].pause();
    }
+});
 });
   </script>
     </body>
