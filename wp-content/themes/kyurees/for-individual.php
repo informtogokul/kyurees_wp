@@ -185,6 +185,7 @@ get_header(); ?>
 
       <div class="row text-center">
       <?php
+      $m=1;
     if (have_rows("voices_stories")):
                             while (have_rows("voices_stories")):
                                 the_row(); ?>
@@ -200,6 +201,7 @@ get_header(); ?>
           </div>
         </div>
         <?php
+           $m++;
                 endwhile;
                 endif; ?>
     </div>
