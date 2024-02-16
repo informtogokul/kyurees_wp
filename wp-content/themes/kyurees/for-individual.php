@@ -75,9 +75,13 @@ get_header(); ?>
     <?php
      $i=1;
     if (have_rows("panel_section")):
+      $count = count(get_field('panel_section'));
                             while (have_rows("panel_section")):
-                                the_row(); ?>
-        <div class="col-md-4">
+                                the_row(); 
+                                
+                                
+                                ?>
+        <div class="col-md-4 d-flex">
           <div class="light-card text-center">
             <img src="<?php echo get_sub_field('image_s_fi'); ?>" width="75" class="mb-4">
             <h3 class="mb-3"><?php echo get_sub_field('title_s_fi'); ?></h3>
@@ -94,7 +98,7 @@ get_header(); ?>
       </div>
      
 
-      </div>
+
       <div class="row mt-4 text-center">
         <div class="col-md-12">
           <a href="<?php echo get_field('link_url_p_fi'); ?>" class="btn btn-purple"><?php echo get_field('link_text_p_fi'); ?> </a>
@@ -120,7 +124,7 @@ get_header(); ?>
     if (have_rows("training_course")):
                             while (have_rows("training_course")):
                                 the_row(); ?>
-              <li class="nav-item col-6">
+              <li class="nav-item col-12">
                 <a class="nav-link w-100 me-1 <?php if($i==1){ echo "active"; } ?>" data-bs-toggle="pill" href="#tab<?php echo $i; ?>"><?php echo get_sub_field('title_fi_training'); ?></a>
               </li>
               <?php
@@ -190,7 +194,7 @@ get_header(); ?>
                             while (have_rows("voices_stories")):
                                 the_row(); ?>
       <div class="col-md-4">
-          <a href="javascript:;" class="btn btn-outline-dark"><?php echo get_sub_field('name_voice_fi'); ?></a>
+          <a href="javascript:;" class="btn btn-outline-dark" id="testav_<?php echo $m; ?>"><?php echo get_sub_field('name_voice_fi'); ?></a>
 
           <div class="testi" id="testv_<?php echo $m; ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Play.png" id="img_<?php echo $m; ?>" />
@@ -218,9 +222,47 @@ get_header(); ?>
         <div class="col-6 p-5">
           <h2 class="h2 mb-3"><?php echo get_field('footer_title_fi'); ?></h2>
           <p class="lead"><?php echo get_field('footer_description_fi'); ?></p>
-          <a href="<?php echo get_field('footer_link_url'); ?>" class="btn btn-pink"><?php echo get_field('footer_link_text'); ?></a>
+          <a id="myBtn" class="btn btn-pink"><?php echo get_field('footer_link_text'); ?></a>
         </div>
       </div>
     </div>
   </section>
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <?php echo do_shortcode('[contact-form-7 id="2aa5ee7" title="Student Brochure"]'); ?>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
   <?php get_footer(); ?>

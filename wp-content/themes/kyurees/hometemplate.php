@@ -12,11 +12,14 @@
     <div class="row align-items-center">
   
     <div class="col-12">
-
-   <video id="myVideo" width="100%" autoplay>
+<div class="videowrapper">
+  <span class="playpause"></span>
+  <video id="myVideo" class="videobanner" width="100%" preload="metadata">
   <source src="<?php echo get_field('banner_video_url'); ?>" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+</div>
+
 
 </div>
 </div>
@@ -128,78 +131,73 @@
       <div class="row bg-light-news">
         <div class="col-md-6 d-flex">
           <div class="card overflow-hidden">
+          <?php
+            $args = array(
+                'post_type'=>'post',
+                'posts_per_page' => 3,
+                'offset'=>1,
+            );
+            
+            $loop = new WP_Query( $args );
+            if ( $loop->have_posts() ) {
+                while ( $loop->have_posts() ) : $loop->the_post();
+           ?>
             <div class="news-container">
               <div class="me-3">
-                <img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/news1.png"); ?>" class="img-fluid">
+                <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
               </div>
               <div>
-                <p class="lead mb-1">Law firm that handles data breaches was hit by data breach</p>
+                <p class="lead mb-1"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></p>
                 <ul class="news-list">
                   <li class="ps-0">
-                    <span class="text-green"> Cyber Security</span>
+                    <span class="text-green"> <?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></span>
                   </li>
-                  <li class="border-0">
-                    <i><img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/clock.png"); ?>"> </i>
-                    1 Hour Ago
-                  </li>
-                </ul>
+                  </ul>
               </div>
             </div>
-            <div class="news-container">
-              <div class="me-3">
-                <img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/news2.png"); ?>" class="img-fluid">
-              </div>
-              <div>
-                <p class="lead mb-1">Cyberattack exposes Swiss Air Force documents on the Darknet</p>
-                <ul class="news-list">
-                  <li class="ps-0">
-                    <span class="text-green"> Cyber Security</span>
-                  </li>
-                  <li class="border-0">
-                    <i><img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/clock.png"); ?>"> </i>
-                    2 Hours Ago
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="news-container border-0">
-              <div class="me-3">
-                <img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/news3.png"); ?>" class="img-fluid">
-              </div>
-              <div>
-                <p class="lead mb-1">CertiK’s X account briefly hacked by Forbes impersonator</p>
-                <ul class="news-list">
-                  <li class="ps-0">
-                    <span class="text-green"> Cyber Security</span>
-                  </li>
-                  <li class="border-0">
-                    <i><img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/clock.png"); ?>"> </i>
-                    2 Hours Ago
-                  </li>
-                </ul>
-              </div>
-            </div>
+
+            <?php     endwhile;
+            }
+  ?>	
           </div>
-          
+
         </div>
         <div class="col-md-6 d-flex">
+        <?php
+            $args = array(
+                'post_type'=>'post',
+                'posts_per_page' => 1,
+            );
+            
+            $loop = new WP_Query( $args );
+            if ( $loop->have_posts() ) {
+                while ( $loop->have_posts() ) : $loop->the_post();
+           ?>
           <div class="news-container-right card">
-            <div class="">
-              <img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/news4.png"); ?>" class="img-fluid">
+            <div style="background:url('<?php echo get_the_post_thumbnail_url(); ?>');  background-repeat: no-repeat;
+  background-size: cover; height:460px;width:100%;">
+
             </div>
             <div class="p-4">
-              <h5>19 individuals worldwide charged in transnational cybercrime investigation of the XDedic marketplace</h5>
+              <h5><a href="<?php echo get_permalink(); ?>" class="colorblack"><?php the_title(); ?></a></h5>
               <ul class="news-list">
                 <li class="ps-0">
-                  <span class="text-green"> Cyber Security</span>
+                  <span class="text-green"> <?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></span>
                 </li>
-                <li class="border-0">
-                  <i><img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/clock.png"); ?>"> </i>
-                  2 Hours Ago
-                </li>
+     
               </ul>
             </div>
           </div>
+          <?php     endwhile;
+            }
+  ?>	
+        </div>
+
+
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center mb-2">
+         <a href="<?php echo get_permalink('390'); ?>" class="btn btn-yellow mt-3">Read more</a>
         </div>
       </div>
     </div>
@@ -232,7 +230,7 @@
     
         <div class="col-md-4">
           <div class="testi" id="testv_<?php echo $m; ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Play.png" id="img_<?php echo $m; ?>" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/play-icon.png" id="img_<?php echo $m; ?>" />
                   <video id="test_<?php echo $m; ?>" width="100%">
                     <source src="<?php  echo get_field('video_url_testi'); ?>" type="video/mp4">
                     Your browser does not support HTML5 video.

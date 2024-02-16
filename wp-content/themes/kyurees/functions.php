@@ -5,6 +5,7 @@ function shade_menus() {
 	$locations = array(
 		'primary'  => __( 'Desktop Horizontal Menu', 'twentytwenty' ),
 		'footer'   => __( 'Footer Menu', 'twentytwenty' ),
+		'sidebar'   => __( 'Sidebar Menu', 'twentytwenty' ),
 	);
 
 	register_nav_menus( $locations );
@@ -22,3 +23,4 @@ function register_navwalker(){
 	require_once get_template_directory() . '/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+add_filter( 'xmlrpc_enabled', '__return_false' );

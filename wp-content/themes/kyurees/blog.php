@@ -108,8 +108,9 @@ get_header(); ?>
            ?>
             <div class="col-md-4">
                 <div class="card card-body">
-                    <div class="blog-img">
-                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
+                    <div class="blog-img" style="background:url('<?php echo get_the_post_thumbnail_url(); ?>');  background-repeat: no-repeat;
+  background-size: cover; height:200px;width:100%;">
+              
                     </div>
                     <h6 class="">Article, Blog</h6>
                     <h3><a href="<?php echo get_permalink(); ?>" style="color:#fff;"><?php the_title(); ?></a></h3>

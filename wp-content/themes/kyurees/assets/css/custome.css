@@ -21,45 +21,25 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-  font-family: 'avenir_next_lt_probold';
-  src: url('../font/avenir_next_lt_pro_bold-webfont.woff2') format('woff2'),
-       url('../font/avenir_next_lt_pro_bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'avenir55_roman';
-  src: url('../font/avenir-roman-webfont.woff2') format('woff2'),
-       url('../font/avenir-roman-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
 
 a {
   text-decoration: none;
 }
 
 html,body {
-  font-family: 'avenir55_roman';
+  font-family: 'bahnschriftregular';
   font-weight: normal;
 }
 
 
   h1 {
-    font-family: 'avenir_next_lt_probold';
+    font-family: 'Gobold Bold Regular';
     font-weight: normal;
     font-size: 42px;
   }
 
   h2,h3,h4,h5,h6 {
-    font-family: 'avenir_next_lt_probold';
+    font-family: 'Gobold Regular';
     font-weight: normal;
 
   }
@@ -134,24 +114,28 @@ body {
   border-radius: 15px;
   padding: 40px;
   border: 1px solid #FFFFFF;
+  width: 100%;
 }
 .blue-card {
   background: #00AEEF;
   border-radius: 15px;
   padding: 40px;
   border: 1px solid #FFFFFF;
+  width: 100%;
 }
 .pink-card {
   background: #FF2CA0;
   border-radius: 15px;
   padding: 40px;
   border: 1px solid #FFFFFF;
+  width: 100%;
 }
 .yellow-card {
   background: #FBB040;
   border-radius: 15px;
   padding: 40px;
   border: 1px solid #FFFFFF;
+  width: 100%;
 }
 .btn-outline-yellow {
   border: 1px solid #FFFFFF;
@@ -290,7 +274,7 @@ a.nav-link:hover {
   border: 2px solid #e152fd;
 }
 .top-navbar .navbar-nav .nav-item {
-  margin: 20px;
+  margin: 5px;
 }
 .top-navbar ul.dropdown-menu {
   background: #9747FF;
@@ -469,7 +453,7 @@ a.nav-link:hover {
   border: 1px solid #000000;
 }
 .training-tab .nav-pills .nav-link {
-  font-family: 'avenir55_roman';
+  font-family: 'Gobold Regular';
   color: #000000;
   border-radius: 0;
   border: 1px solid #000000;
@@ -517,7 +501,7 @@ a.nav-link:hover {
 
 .our-product-slide .pdt {
   width: 400px;
-  animation: moveSlideshow 5s linear infinite;
+  /* animation: moveSlideshow 5s linear infinite; */
   color: #FFFFFF;
 }
 
@@ -716,5 +700,4 @@ button.navbar-toggler {
 @media only screen and (max-width:540px) {
  
 }
-
 

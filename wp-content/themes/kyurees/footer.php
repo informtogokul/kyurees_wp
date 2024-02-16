@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-2">
           <ul>
-            <li><a href="<?php echo get_permalink('31'); ?>">About Us</a> </li>
+            <li><a href="<?php echo get_permalink('587'); ?>">About Us</a> </li>
             <li><a href="<?php echo get_permalink('87'); ?>">Contact Us</a> </li>
             <li><a href="<?php echo get_permalink('390'); ?>">Blogs</a> </li>
           </ul>
@@ -60,8 +60,10 @@
       $("#test_1")[0].pause();
       $("#test_3")[0].pause();
       $("#test_2")[0].pause();
+      $(".playpause").fadeOut();
     } else {
       video.pause();
+      $(".playpause").fadeIn();
     }
   });
   
@@ -75,6 +77,7 @@
       $("#test_2")[0].pause();
       $("#test_3")[0].pause();
       $("#myVideo")[0].pause();
+      $(".playpause").fadeIn();
     } else {
       video.pause();
       $("#img_1").show();
@@ -91,6 +94,7 @@
       $("#test_1")[0].pause();
       $("#test_3")[0].pause();
       $("#myVideo")[0].pause();
+      $(".playpause").fadeIn();
     } else {
       video.pause();
       $("#img_2").show();
@@ -107,6 +111,7 @@
       $("#test_1")[0].pause();
       $("#test_2")[0].pause();
       $("#myVideo")[0].pause();
+      $(".playpause").fadeIn();
     } else {
       video.pause();
       $("#img_3").show();
@@ -125,13 +130,10 @@ $(window).scroll(function(){
   var scroll = $(this).scrollTop();
    if(scroll > 70){
     video.pause();
-   }else{
-    video.play();
-      $("#test_1")[0].pause();
-      $("#test_2")[0].pause();
-      $("#test_3")[0].pause();
+    $(".playpause").fadeIn();
    }
 });
+
 });
   </script>
     </body>

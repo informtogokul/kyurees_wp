@@ -33,7 +33,7 @@
         </a>
       </div>
 
-        <div class="col-md-8 order-md-1 order-last col-12">
+        <div class="col-md-7 order-md-1 order-last col-12">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,8 +50,8 @@
             );
         ?>
       </div>
-      <div class="col-md-2 order-md-3">
-      <a class="btn btn-outline-pink float-end" href="https://learn.kyureeus.com/" type="submit" target="_blank">Student Login</a>
+      <div class="col-md-3 order-md-3">
+      <a class="btn btn-outline-pink" href="https://learn.kyureeus.com/" type="submit" target="_blank">Student Login</a>
         <a class="btn btn-outline-pink float-end" href="<?php echo get_permalink('87'); ?>" type="submit">Contact Us</a>
       </div>
       

@@ -86,7 +86,7 @@ get_header(); ?>
     if (have_rows("our_values_content")):
                             while (have_rows("our_values_content")):
                                 the_row(); ?>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex">
           <div class="light-card text-center">
             <img src="<?php echo get_sub_field('image_ov'); ?>" width="75" class="mb-4">
             <h3 class="mb-3"><?php echo get_sub_field('title_ov'); ?></h3>

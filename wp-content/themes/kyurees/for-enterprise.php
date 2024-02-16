@@ -103,7 +103,7 @@ get_header(); ?>
     if (have_rows("critical_time_panel_fe")):
                             while (have_rows("critical_time_panel_fe")):
                                 the_row(); ?>
-            <div class="col-md-3">
+            <div class="col-md-3 d-flex">
                 <div class="<?php echo $class_panel[$i]; ?> text-center">
                     <h3 class="mb-3"><?php echo get_sub_field('title_sb_ct') ?></h3>
                     <p class="mb-3"><?php echo get_sub_field('description_sb_ct') ?></p>
