@@ -118,6 +118,57 @@
     }
   });
 
+  $("#testav_1").click(function() {
+    var video = $("#test_1")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_1").hide();
+      $("#img_2").show();
+      $("#img_3").show();
+      $("#test_2")[0].pause();
+      $("#test_3")[0].pause();
+      $("#myVideo")[0].pause();
+      $(".playpause").fadeIn();
+    } else {
+      video.pause();
+      $("#img_1").show();
+    }
+  });
+
+  $("#testav_2").click(function() {
+    var video = $("#test_2")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_2").hide();
+      $("#img_1").show();
+      $("#img_3").show();
+      $("#test_1")[0].pause();
+      $("#test_3")[0].pause();
+      $("#myVideo")[0].pause();
+      $(".playpause").fadeIn();
+    } else {
+      video.pause();
+      $("#img_2").show();
+    }
+  });
+
+  $("#testav_3").click(function() {
+    var video = $("#test_3")[0];
+    if (video.paused) {
+      video.play();
+      $("#img_3").hide();
+      $("#img_1").show();
+      $("#img_2").show();
+      $("#test_1")[0].pause();
+      $("#test_2")[0].pause();
+      $("#myVideo")[0].pause();
+      $(".playpause").fadeIn();
+    } else {
+      video.pause();
+      $("#img_3").show();
+    }
+  });
+
 
 
 });
