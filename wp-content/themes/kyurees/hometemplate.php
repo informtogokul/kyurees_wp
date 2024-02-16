@@ -42,7 +42,7 @@
         <?php if (have_rows("products_hp")):
                             while (have_rows("products_hp")):
                                 the_row(); ?>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex">
         <div class="<?php echo $arr[$i]; ?>">
           <img src="<?php echo get_sub_field('product_image_hp'); ?>" width="75" class="mb-4">
           <h3 class="mb-3"><?php echo get_sub_field('product_title_hp'); ?></h3>

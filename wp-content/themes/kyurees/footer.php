@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-2">
           <ul>
-            <li><a href="<?php echo get_permalink('587'); ?>">About Us</a> </li>
+            <li><a href="<?php echo get_permalink('584'); ?>">About Us</a> </li>
             <li><a href="<?php echo get_permalink('87'); ?>">Contact Us</a> </li>
             <li><a href="<?php echo get_permalink('390'); ?>">Blogs</a> </li>
           </ul>

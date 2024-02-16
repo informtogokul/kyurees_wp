@@ -233,7 +233,7 @@ get_header(); ?>
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <?php echo do_shortcode('[contact-form-7 id="2aa5ee7" title="Student Brochure"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="51099f1" title="Student Form Brochure"]'); ?>
   </div>
 
 </div>
