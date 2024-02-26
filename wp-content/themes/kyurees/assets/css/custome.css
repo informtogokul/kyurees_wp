@@ -686,6 +686,7 @@ iframe {
 button.navbar-toggler {
   float: right;
   margin-top: -42px;
+  padding: 6px 2px;
 }
 .navbar>.container {
   margin-top: 12px;
@@ -693,11 +694,61 @@ button.navbar-toggler {
 .navbar a.btn.btn-outline-pink {
   margin-right: 70px;
 }
+.pie-chart-sec {
+  margin: 0 auto;
+}
+.client-sec {
+  width: 90%;
+  margin-left: 5%;
+}
+.news-container {
+  display: block;
+}
+.footer-bottom {
+  text-align: center;
+}
+a.copyright {
+  float: none;
+  clear: both;
+  margin-top: 10px;
+  display: block;
+}
+section.bg-light.training-tab ul {
+  justify-content: center;
+}
 
 
 } 
 
 @media only screen and (max-width:540px) {
- 
+  .navbar a.btn.btn-outline-pink {
+    margin-right: 5px;
+  }
+  .btn-outline-pink {
+    padding: 10px 5px;
+    font-size: 12px;
 }
+.navbar a.btn.btn-outline-pink.float-end {
+  margin-right: 60px;
+}
+.navbar .col-md-3,.navbar .col-md-4,.navbar .col-md-8 {
+  margin-bottom: 0;
+}
+.logo {
+  width: 100px;
+}
+.home-hero h1 {
+  font-size: 28px;
+  line-height: 40px;
+}
+.lead {
+  font-size: 1.0rem;
+}
+.box-sec {
+  width: 94%;
+  margin-left: 3%;
+}
+}
+
+
 
