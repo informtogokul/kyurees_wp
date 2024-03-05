@@ -638,6 +638,18 @@ ul.blog-social li {
   }
 }
 
+@media only screen and (max-width:1200px) {
+  .navbar>.container {
+    max-width: 100%;
+}  
+}
+
+@media only screen and (max-width:1024px){
+  .btn-outline-pink {
+    padding: 10px 10px;
+}
+}
+
 @media only screen and (max-width:768px) {
   .home-hero .col-md-4 {
     margin-bottom: 20px;
@@ -685,14 +697,18 @@ iframe {
 }
 button.navbar-toggler {
   float: right;
-  margin-top: -42px;
+  margin-top: -52px;
   padding: 6px 2px;
 }
 .navbar>.container {
   margin-top: 12px;
+  max-width: 760px;
 }
 .navbar a.btn.btn-outline-pink {
-  margin-right: 70px;
+  margin-right: 10px;
+}
+.navbar a.btn.btn-outline-pink.float-end {
+  margin-right: 50px;
 }
 .pie-chart-sec {
   margin: 0 auto;
@@ -715,6 +731,16 @@ a.copyright {
 }
 section.bg-light.training-tab ul {
   justify-content: center;
+}
+
+
+.navbar-expand-md .navbar-toggler {
+  display: block !important;
+  margin-top: 40px;
+}
+
+.navbar-expand-md .navbar-collapse {
+  display: none;
 }
 
 
