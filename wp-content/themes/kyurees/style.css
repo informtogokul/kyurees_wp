@@ -259,15 +259,35 @@
                 background-size: contain;
                 background-position: center;
             }
-              @media only screen and (max-width: 768px){
-                
-                  section:first-child{
-                    padding-top: 170px;
-                  }
+
+            @media only screen and (max-width:1200px) {
+              .navbar>.container {
+                max-width: 100%;
+            }  
+            .btn-outline-pink {
+              width: 120px;
+              padding: 5px 0;
+            }
+            }
+
+            @media only screen and (max-width:1024px){
+
+              .btn-outline-pink {
+                width: 110px;
+                padding: 5px 3px;
+                font-size: 12px;
+              }
+              }
+
+              @media only screen and (max-width: 768px){                
                   .top-navbar {
-                    height: 181px;
+                    height: 90px;
                   }
                   .contact-hero{
                     padding-top:150px;
                   }
+                  .btn-outline-pink {
+                    width: 110px;
+                    font-size: 12px;
+                }
               }

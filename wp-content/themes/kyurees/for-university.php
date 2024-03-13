@@ -254,7 +254,7 @@ get_header(); ?>
   <section class="get-in-touch pb-5">
     <div class="container">
       <div class="row">
-        <div class="col-6 p-5">
+        <div class="col-md-6 col-sm-12 col-xs-12 p-5">
           <h2 class="h2 mb-3"><?php echo get_field('title_bbfu'); ?></h2>
           <p class="lead"><?php echo get_field('description_bbfu'); ?></p>
           <a href="<?php echo get_field('url_bbfu'); ?>" class="btn btn-pink"><?php echo get_field('link_text_bbfu'); ?></a>

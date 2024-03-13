@@ -219,7 +219,7 @@ get_header(); ?>
   <section class="fast-track pb-5">
     <div class="container">
       <div class="row">
-        <div class="col-6 p-5">
+        <div class="col-md-6 col-sm-12 col-xs-12 p-5">
           <h2 class="h2 mb-3"><?php echo get_field('footer_title_fi'); ?></h2>
           <p class="lead"><?php echo get_field('footer_description_fi'); ?></p>
           <a id="myBtn" class="btn btn-pink"><?php echo get_field('footer_link_text'); ?></a>
