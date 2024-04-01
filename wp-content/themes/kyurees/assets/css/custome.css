@@ -162,13 +162,20 @@ body {
 .border-right {
   border-right: 1px solid #000000;
 }
-.bg-dark-pattern {
+.bg-dark-pattern1 {
   background: url(../images/editorial-home.jpg);
   background-size: cover;
   background-position: center right;
   padding: 60px 0;
   color: #FFFFFF;
 }
+.bg-dark-pattern {
+  background: #151515;
+  background-image: url(../images/hero-pattern.png);
+  padding: 60px 0;
+  color: #FFFFFF;
+}
+
 .bg-light {
   padding: 60px 0;
 }

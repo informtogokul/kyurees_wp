@@ -85,7 +85,7 @@
   </div>
 </section>
 
-<section class="bg-dark-pattern">
+<section class="bg-dark-pattern1">
   <div class="container">
     <div class="row">
       <div class="col-md-7 text-left mb-3">
