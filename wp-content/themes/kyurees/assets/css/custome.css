@@ -163,8 +163,9 @@ body {
   border-right: 1px solid #000000;
 }
 .bg-dark-pattern {
-  background: #151515;
-  background-image: url(../images/hero-pattern.png);
+  background: url(../images/editorial-home.jpg);
+  background-size: cover;
+  background-position: center right;
   padding: 60px 0;
   color: #FFFFFF;
 }
@@ -206,16 +207,23 @@ body {
   overflow: hidden;
 }
 .home-contact {
-  background: #000000;
-  background-image: url(../images/contact-bg.png);
+  background-image: url(../images/contact-bg-1.jpg);
   color: #FFFFFF;
   padding: 75px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center right;
+}
+.home-contact h3, .home-contact p{
+  color:#000;
 }
 .home-contact-form {
   background: #444444;
   padding: 40px;
+  width:50%;
+}
+.home-contact-form p{
+  color:#fff;
 }
 .form-control {
   border-radius: 0;
@@ -647,7 +655,12 @@ ul.blog-social li {
 }
 
 @media only screen and (max-width:768px) {
-
+  .bg-dark-pattern,.home-contact{
+    background:#000;
+  }
+  .home-contact-form{
+    width: 100%;
+  }
   .home-hero .col-md-4 {
     margin-bottom: 20px;
 }

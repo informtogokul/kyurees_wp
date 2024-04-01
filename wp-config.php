@@ -1,4 +1,8 @@
 <?php
+
+/** WP 2FA plugin data encryption key. For more information please visit melapress.com */
+define( 'WP2FA_ENCRYPT_KEY', 'Z0KR1hXNX/m8lZZ+3+Uznw==' );
+
 /**
  * The base configuration for WordPress
  *
@@ -20,7 +24,7 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'kyurees' );
+define( 'DB_NAME', 'kyureeus' );
 
 /** Database username */
 define( 'DB_USER', 'root' );
@@ -29,7 +33,7 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '127.0.0.1' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );

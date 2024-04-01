@@ -16,7 +16,6 @@
 <!-- Custom styles for this template -->
     <link href="<?php echo esc_url(get_template_directory_uri()."/assets/css/custome.css"); ?>" rel="stylesheet">
      <?php wp_head(); ?>
-     <script src="<?php echo esc_url(get_template_directory_uri()."assets/js/color-modes.js"); ?>"></script>
      <link href="<?php echo esc_url(get_template_directory_uri()."/style.css"); ?>" rel="stylesheet">
      <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()."/assets/images/apple-touch-icon.png"); ?>">
 <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url(get_template_directory_uri()."/assets/images/favicon-32x32.png"); ?>">

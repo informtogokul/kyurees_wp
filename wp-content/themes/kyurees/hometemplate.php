@@ -88,15 +88,13 @@
 <section class="bg-dark-pattern">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center mb-3">
+      <div class="col-md-7 text-left mb-3">
         <h2 class="h1 mb-5"><?php echo get_field('heading_editoral_2'); ?></h2>
-      </div>
-      <div class="col-md-7">
       <?php echo get_field('editorial_description_2'); ?>
       </div>
-      <div class="col-md-5">
+     <!-- <div class="col-md-5">
         <img src="<?php echo get_field('editorial_image_2'); ?>" width="" class="img-fluid">
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
