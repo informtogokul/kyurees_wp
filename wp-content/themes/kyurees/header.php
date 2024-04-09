@@ -8,7 +8,6 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
     <title><?php the_title(); ?></title>
-    <script src="<?php echo esc_url(get_template_directory_uri()."/assets/js/color-modes.js"); ?>"></script>
     <link rel="canonical" href="<?php echo esc_url("https://getbootstrap.com/docs/5.3/examples/carousel/"); ?>">
     <link rel="stylesheet" href="<?php echo esc_url("https://cdn.jsdelivr.net/npm/@docsearch/css@3"); ?>">
     <link rel="icon" type="image/x-icon" href="<?php echo esc_url(get_template_directory_uri()."/assets/images/favicon.png"); ?>">
@@ -20,7 +19,6 @@
      <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()."/assets/images/apple-touch-icon.png"); ?>">
 <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url(get_template_directory_uri()."/assets/images/favicon-32x32.png"); ?>">
 <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url(get_template_directory_uri()."/assets/images/favicon-16x16.png"); ?>">
-<script type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "siqb22d4e7cc8b248353956d8aedab0ad991571337f17299da38d391af0e1939693", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zohopublic.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
 
 </head>
 <body>

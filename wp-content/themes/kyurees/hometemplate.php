@@ -13,11 +13,11 @@
   
     <div class="col-12">
 <div class="videowrapper">
-  <span class="playpause"></span>
-  <video id="myVideo" class="videobanner" width="100%" preload="metadata">
+  <video id="myVideo" class="videobanner" width="100%"  autoplay muted>
   <source src="<?php echo get_field('banner_video_url'); ?>" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+
 </div>
 
 

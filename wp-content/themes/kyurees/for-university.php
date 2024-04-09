@@ -217,7 +217,8 @@ get_header(); ?>
     </div>
   </section>
 
-  <section class="bg-light company-testi pt-0">
+
+  <section class="bg-light company-testi pt-0 nomobileview">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -250,7 +251,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
+     
   <section class="get-in-touch pb-5">
     <div class="container">
       <div class="row">

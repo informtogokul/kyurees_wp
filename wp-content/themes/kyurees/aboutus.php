@@ -1,7 +1,13 @@
 <?php
 /* Template Name: About us */
 get_header(); ?>
-
+<style>
+  @media only screen and (max-width: 768px){  
+    .offset-1{
+      margin-left:0px!important;
+    }
+  }
+</style>
 <main>
 
   <section class="home-hero">
@@ -101,7 +107,7 @@ get_header(); ?>
   </section>
 
 
-  <section class="bg-light">
+  <section class="bg-light nomobileview">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center mb-4">

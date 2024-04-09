@@ -1,8 +1,35 @@
 <?php
 /* Template Name: For Enterprise page */
 get_header(); ?>
+  <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()."/assets/slick/slick.css?v2022"); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()."/assets/slick/slick-theme.css?v2022"); ?>">
+<style>
 
-<main>
+.slider {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+   }
+    
+   .slide {
+  height: 100%;
+}
+  </style>
+  <main>
 
   <section class="contact-hero">
     <div class="container">
@@ -31,7 +58,7 @@ get_header(); ?>
 
         </div>
       </div>
-      <div class="our-product-slide">
+      <div class="our-product-slide regular slider">
 
 
       <?php
@@ -55,7 +82,7 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
+  
   <section class="bg-dark-pattern">
     <div class="container">
       <div class="row align-items-lg-center">
@@ -66,7 +93,7 @@ get_header(); ?>
          
              <p class="lead"><?php echo get_field('description_e_fr'); ?></p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 nomobileview">
           <img src="<?php echo get_field('image_e_fr'); ?>" width="" class="img-fluid">
         </div>
       </div>
