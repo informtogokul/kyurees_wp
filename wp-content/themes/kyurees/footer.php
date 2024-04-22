@@ -168,5 +168,6 @@
       });
     });
     </script>
+    <script src="<?php echo esc_url(get_template_directory_uri()."/assets/js/menu.js"); ?>"></script>
     </body>
 </html>

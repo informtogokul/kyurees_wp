@@ -110,9 +110,9 @@ get_header(); ?>
          
              <div class="lead"><?php echo get_field('description_e_fr_copy_2'); ?></div>
         </div>
-        <div class="col-md-5">
+       <!-- <div class="col-md-5">
           <img src="<?php echo get_field('image_e_fr_2'); ?>" width="" class="img-fluid">
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

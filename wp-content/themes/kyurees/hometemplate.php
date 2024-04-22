@@ -6,20 +6,41 @@
 
         
 <main>
-
+<style>
+.showDesktop{
+  display: table;
+}
+.showMobile{
+  display:none;
+}
+@media only screen and (max-width: 768px){  
+  .showDesktop{
+    display:none;
+  }
+  .showMobile{
+    display: table;
+  } 
+}
+</style>
 <section class="home-hero">
   <div class="container-fluid">
     <div class="row align-items-center">
   
     <div class="col-12">
-<div class="videowrapper">
-  <video id="myVideo" class="videobanner" width="100%"  autoplay muted>
+<div class="videowrapper showDesktop">
+  <video id="myVideo" class="videobanner" width="100%"  autoplay muted loop playsinline>
   <source src="<?php echo get_field('banner_video_url'); ?>" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
 </div>
-
+<div class="videowrapper showMobile">
+	
+	  <video id="myVideo" class="videobanner" width="100%"  autoplay muted loop playsinline>
+  <source src="<?php echo get_field('mobile_banner_video'); ?>" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
 
 </div>
 </div>
@@ -123,7 +144,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center mb-2">
-          <h2 class="h1 mb-5">Events and <span class="yellow-text"> News</span>​</h2>
+          <h2 class="h1 mb-5">Events and <span class="yellow-text"> News</span>?</h2>
         </div>
       </div>
       <div class="row bg-light-news">
@@ -229,7 +250,7 @@
         <div class="col-md-4">
           <div class="testi" id="testv_<?php echo $m; ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/play-icon.png" id="img_<?php echo $m; ?>" />
-                  <video id="test_<?php echo $m; ?>" width="100%">
+                  <video id="test_<?php echo $m; ?>" width="100%" playsinline>
                     <source src="<?php  echo get_field('video_url_testi'); ?>" type="video/mp4">
                     Your browser does not support HTML5 video.
                   </video>

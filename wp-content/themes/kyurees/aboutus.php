@@ -107,7 +107,7 @@ get_header(); ?>
   </section>
 
 
-  <section class="bg-light nomobileview">
+ <!-- <section class="bg-light nomobileview">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center mb-4">
@@ -126,6 +126,6 @@ get_header(); ?>
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <?php get_footer(); ?>

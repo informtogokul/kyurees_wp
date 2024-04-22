@@ -12,6 +12,13 @@
                 -moz-user-select: none;
                 user-select: none;
               }
+
+              .showDesktop{
+                display: table;
+              }
+              .showMobile{
+                display:none;
+              }
         
               @media (min-width: 768px) {
                 .bd-placeholder-img-lg {
@@ -279,7 +286,13 @@
               }
               }
 
-              @media only screen and (max-width: 768px){                
+              @media only screen and (max-width: 768px){  
+                .showDesktop{
+                  display:none;
+                }
+                .showMobile{
+                  display: table;
+                }              
                   .top-navbar {
                     height: 90px;
                   }
